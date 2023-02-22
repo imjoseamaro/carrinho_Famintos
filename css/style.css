@@ -1,0 +1,155 @@
+.cabecalho{
+    display: flex;
+    background-color:#dc0a1b;
+    align-items: center;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    height: 110px;
+}
+#lista{
+    display: flex;
+}
+#logo{
+    width:300px;
+    height: 110px;
+}
+.item{
+    padding:30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style-type: none;
+    border-left: white 3px solid;
+}
+#links{
+    margin-left: auto;
+}
+#i1{
+    border-left: none;
+}
+
+.inicio{
+    margin-top: 6px;
+    display:flex;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    position: relative;
+}
+#logo2{
+    width:520px;
+    height: 110px;
+}
+#hbg{
+    width: 100%;
+}
+
+.quadro{
+    width: 100%;
+}
+#peqs{
+    width: 20%;
+}
+#pizza{
+    width: 100%;
+}
+#comidas{
+    width: 20%;
+    font-size: 50px;
+    padding:2.5%;
+    font-family: Verdana, Tahoma, sans-serif, bold;
+}
+#pizza{
+    width: 100%;
+}
+#principal{
+    width: 60%;
+}
+.recomendar{
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    background-color: rgb(255, 255, 221);
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+}
+.texto{
+    position: absolute;
+    background-image:radial-gradient(circle at center right,transparent 30%,#1f1f1f 63%,rgb(12, 12, 12));
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#estetica{
+    text-align: center;
+    margin-left: 5%;
+}
+#p{
+    margin: 0px;
+}
+
+.texto{
+    animation: fade-in-left 2s;
+  }
+  @keyframes fade-in-left {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+.slider{
+    overflow: hidden;
+
+}
+.slider > .slides{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease;
+
+}
+
+.slider > .slides > .inicio {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slides{
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slides{
+    transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slides{
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slides{
+    transform: translateX(-300%);
+}
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    text-decoration: none;
+  }
+
+  
